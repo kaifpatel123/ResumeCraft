@@ -1,0 +1,272 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.card span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.resume {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.biodata {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.portfolio {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121518;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.resume-wrapper {
+  width: 80%;
+  max-width: 1000px;
+  background: #1a1d22;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  margin: 2rem auto;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  color: #dedede;
+}
+
+.toggle-switch {
+  width: 50px;
+  height: 28px;
+  background: #333;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-switch .circle {
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 26px;
+  transition: 0.3s;
+}
+
+.section {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.purple { background: #4b2e83; }
+.teal   { background: #157a8a; }
+.orange { background: #ec7424; }
+.blue   { background: #2447a7; }
+.pink   { background: #b73c6d; }
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.input-grid-2col,
+.input-grid-3col {
+  display: grid;
+  gap: 1rem;
+}
+
+.input-grid-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-grid-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  background: #2a2e35;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.add-btn {
+  background: transparent;
+  border: 2px solid #ccc;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  color: #bcd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.tag-list {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #2c2f33;
+  color: #eee;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.generate {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.generate-btn {
+  background: #00d084;
+  color: #000;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background: #00b273;
+}
+
+.upload-link {
+  color: #999;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .input-grid-2col, .input-grid-3col {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .resume-wrapper {
+    width: 95%;
+  }
+}
+.upload-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #444;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #666;
+}
+
+.file-input {
+  display: none;
+}

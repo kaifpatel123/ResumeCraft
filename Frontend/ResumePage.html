@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResumeCraft - Resume Builder</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="resume-wrapper">
+    <div class="resume-header">
+      <h1>RESUMECRAFT</h1>
+      <div class="toggle-switch">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Personal Details -->
+    <div class="section purple">
+      <h2>Personal Details</h2>
+      <div class="input-grid-2col">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Age" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Phone" />
+        <input type="text" placeholder="Linkedin  com/in/" />
+        <input type="text" placeholder="github.com" />
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section teal">
+      <h2>Experience</h2>
+      <div class="input-row">
+        <input type="text" placeholder="Experience" />
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section orange">
+      <h2>Education / Qualification</h2>
+      <div class="input-grid-3col">
+        <input type="text" placeholder="Degree" />
+        <input type="text" placeholder="Grade" />
+        <input type="text" placeholder="Year" />
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section blue">
+      <h2>Skills</h2>
+      <div class="input-row">
+        <input type="text" placeholder="e.g. design, coding, teamwork" />
+        <button class="add-btn">Add</button>
+      </div>
+      <div class="tag-list">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section pink">
+      <h2>Projects</h2>
+      <div class="input-grid-2col">
+        <input type="text" placeholder="Project Name" />
+        <input type="text" placeholder="Description" />
+      </div>
+    </div>
+
+    <!-- Generate -->
+<div class="generate">
+    <button class="generate-btn">GENERATE RESUME</button>
+    <p class="upload-link">or upload an existing resume</p>
+    
+    <label for="resume-upload" class="upload-btn">Choose File</label>
+    <input type="file" id="resume-upload" class="file-input" accept=".pdf,.doc,.docx" />
+  </div>
+  
+  </div>
+</body>
+</html>
